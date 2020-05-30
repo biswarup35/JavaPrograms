@@ -12,6 +12,7 @@ public class Main {
 
     public Main() {
         frame = new JFrame("JTable");
+        // Window adapter with dispose method. It will close the frame if close button is pressed
         frame.addWindowListener(new WindowAdapter() {
             public void windowClosing(WindowEvent e) {
                 frame.dispose();
